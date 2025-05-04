@@ -1,0 +1,45 @@
+name: Bug Report
+description: "Report a bug you're experiencing."
+labels: bug
+
+fields:
+  - name: Current Behavior
+    description: "A clear and concise description of the behavior."
+    required: true
+    type: text
+
+  - name: Possible Solution
+    description: "Optional: Suggestions on a fix for the bug."
+    required: false
+    type: text
+
+  - name: Error Type
+    description: "What type of error is it? (Choose the most relevant type)"
+    required: true
+    type: select
+    options:
+      - Functionality
+      - Security
+      - Build/Compilation
+      - Accessibility
+      - Deployment
+      - Error Handling
+      - Dependency/Package Issue
+      - Configuration
+      - Versioning
+      - Other
+
+  - name: How to Reproduce
+    description: "Steps to reproduce the behavior."
+    required: true
+    type: textarea
+
+  - name: Location of Issue
+    description: "Where did the issue occur? (e.g., specific page, feature, or component)"
+    required: true
+    type: text
+
+  - name: Additional Context/Screenshots
+    description: "Any other context about the problem. Include screenshots if applicable."
+    required: false
+    type: file
