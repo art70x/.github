@@ -1,0 +1,43 @@
+name: Feature Request
+description: "Submit a feature request or suggestion for improvement."
+labels: enhancement, feature
+
+fields:
+  - name: Feature Name
+    description: "A short title for the feature request."
+    required: true
+    type: text
+
+  - name: Description
+    description: "A clear and detailed description of the requested feature."
+    required: true
+    type: textarea
+
+  - name: Use Cases
+    description: "What problem does this feature solve or what use case does it address?"
+    required: true
+    type: textarea
+
+  - name: Expected Outcome
+    description: "What would you expect this feature to accomplish once implemented?"
+    required: true
+    type: textarea
+
+  - name: Priority
+    description: "How important is this feature? (Low, Medium, High)"
+    required: false
+    type: select
+    options:
+      - Low
+      - Medium
+      - High
+
+  - name: Suggested Implementation
+    description: "Do you have suggestions for how this feature could be implemented or designed?"
+    required: false
+    type: text
+
+  - name: Additional Context
+    description: "Any other context that would help us understand your request better (e.g., links to similar features, designs, etc.)."
+    required: false
+    type: text
