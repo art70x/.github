@@ -1,0 +1,37 @@
+name: Question
+description: "Ask a question related to this project."
+labels: question, discuss
+
+fields:
+  - name: Question Summary
+    description: "A short summary of your question."
+    required: true
+    type: text
+
+  - name: Full Question
+    description: "Please provide a clear and detailed question. Include background or context if needed."
+    required: true
+    type: textarea
+
+  - name: Related Area
+    description: "What part of the project does your question relate to? (e.g., usage, configuration, API, deployment)"
+    required: true
+    type: select
+    options:
+      - Usage
+      - Configuration
+      - Deployment
+      - Performance
+      - Compatibility
+      - Build System
+      - Other
+
+  - name: Steps Tried/Considered
+    description: "What have you tried so far to answer this question on your own?"
+    required: false
+    type: textarea
+
+  - name: Additional Context
+    description: "Any extra context that may help answer your question (e.g., error messages, code snippets, links)."
+    required: false
+    type: textarea
